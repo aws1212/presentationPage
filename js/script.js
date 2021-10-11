@@ -31,6 +31,12 @@ carGreen.style.animation = `moveToGreen ${rangeAround}s forwards`;
 //Condition cars
 function funWinner(){
     if(winRed){        
+        console.timeEnd('clickTime');
+        timeFinish = window.performance.now();
+        time = timeFinish - timeStart;
+        timeSend = Math.round(time/1000);
+        textTime.value = `Winner time ${timeSend} seconds`;
+        register.style.display = "inline-block";
         winRed == false;
     }
 }
@@ -105,13 +111,6 @@ btn_TryAgain.addEventListener("click",(e)=>{
 const interval = setInterval(()=>{
     if(!winRed){
         this.location.reload();
-        
-        // console.timeEnd('clickTime');
-        // timeFinish = window.performance.now();
-        // time = timeFinish - timeStart;
-        // timeSend = Math.round(time/1000);
-        // textTime.value = `Winner time ${timeSend} seconds`;
-        // register.style.display = "inline-block";
     }
     clearInterval(interval);    
 },rangeAround * 1000)
