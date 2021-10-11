@@ -1,0 +1,319 @@
+.body{
+    background: #356FF0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 2000px;
+}
+@media screen and (min-width: 300px) and (max-width: 600px) {
+    /*Header div*/
+    .header{
+        height: 90px;
+        width: 100%;
+        position: fixed;
+        margin-top: -80px;
+        background: #ADEB3D;
+    }
+    .nav-header_responsive{
+        height: 100%;
+        width: 100%;
+        display: flex;
+    }
+    .div-logo{
+        height: 100%;
+        width: 100%;
+        color: #9E3E2B;
+        display: flex;
+    }
+    .logo-text{
+        margin: auto;
+        font-size: 13vw;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size-adjust: 10%;
+    }
+    .links-Responsive{
+        width: 20%;
+        height: 100%;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .menuClick{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/menu.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .responsive-links{
+        position: absolute;
+        top: -1000px;
+        width: 100%;
+        height: 350px;
+        background: #64B0ED;
+        padding: 20px;
+        box-sizing: border-box;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+    }
+    .transitionClass{
+        animation: responsiveLinks 1s forwards
+    }
+    .link{
+        width: 100%;
+        flex-grow: 1;
+        margin: auto;
+        padding: 10px;
+        box-sizing: border-box;      
+        display: flex; 
+    }
+    .link:active{
+        background: #a88;
+    }
+    .textLinks{
+        font-size: 5vw;
+        margin: auto;
+        text-decoration: none;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    @keyframes responsiveLinks{
+        from{
+            top: -1000px;
+        }
+        to{
+            top: 0px;
+        }
+    }
+    /*Fondo div*/
+    .div-fondo{
+        width: 100%;
+        height: 300px;
+        background-image: url(../img/fondo.jpg);
+        background-size: contain;
+        filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        z-index: 1;
+        margin-top: 80px;
+    }
+    .div_title{
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        display:flex;
+        margin-top: -300px;
+        z-index: 10;
+        padding: 10px 60px;
+        box-sizing: border-box;
+    }
+    .titleDesign{
+        margin: auto;
+        color: #356FF0;
+        font-size: 12vh;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    /*Presentation div*/
+    .presentation{
+        width: 100%;
+        height: 350px;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        margin-top: 10px
+    }
+    .div-presentation{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .div1-presentation{
+        height: 100%;
+        width: 30%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .imgPhoto{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/foto.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .div2-presentation{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .subdiv2_title{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        padding: 5px;
+    }
+    .subdiv2_txt{
+        font-size: 4.8vh;
+        margin: 0;
+        margin-left: auto;
+        color: #9E3E2B;
+    }
+    .subdiv2_text{
+        padding: 5px;
+    }
+    .subdiv2_description{
+        margin: auto;
+        font-size: 5.8vw;
+        text-align: right;
+        color: #9E3E2B;
+    }
+    /*Why me*/
+    .why-me{
+        width: 100%;
+        height: 350px;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .div_whyt-me{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .div-why-me_title{
+        width: 100%;
+        height: 25%;
+        display: flex;
+    }
+    .txt-why-me_title{
+        font-size: 4.8vh;
+        margin: 0;
+        margin-left: auto;
+        color: #9E3E2B;
+    }
+    .div-why-me_descript{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .div-Whyme{
+        width: 100%;
+        height: 50%;
+        display: flex;
+    }
+    .div_wy-meList{
+        height: 100%;
+        width: 50%;
+        display: flex;
+    }
+    .list_textKnow{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        font-size: 3vh;
+        text-align: right;
+        color: #9E3E2B;
+    }
+    .list_text{
+        margin: 0px;
+        font-size: 3vh;
+        text-align: right;
+        box-sizing: border-box;
+        color: #9E3E2B;
+    }
+    /*Knowledge*/
+    .Knowledge{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        flex-direction: column;  
+        padding: 10px;
+        box-sizing: border-box;      
+    }
+    .Knowledge_title{
+        width: 100%;
+        height: 25%;
+        display: flex;
+    }
+    .Knowledge_txt{
+        font-size: 4.8vh;
+        margin: 0;
+        margin-left: auto;
+        color: #9E3E2B;
+    }
+    .Knowledge_img{
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+    }
+    .div_know{
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+    }
+    .divImg_know{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;   
+    }
+    /*Contact*/
+    .Contact{
+        width: 100%;
+        height: 350px;
+        display: flex;
+        padding: 10px;
+        box-sizing: border-box; 
+    }
+    .subdiv_contact{
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .subdiv_contact1{
+        height: 100%;
+        width: 30%;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+    .contact-Img{
+        width: 100%;
+        height: 100%;
+        background-image: url(../img/telegram.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .subdiv_contact2{
+        height: 100%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+    }
+    .subdiv_contact2_Title{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        padding: 5px;
+    }
+    .subdiv_title{
+        font-size: 4.8vh;
+        margin: 0;
+        margin-left: auto;
+        color: #9E3E2B;
+    }
+    .subdiv_contact2_Text{
+        padding: 5px;
+    }
+    .div-fondo_p{
+        margin: auto;
+        font-size: 5.8vw;
+        text-align: right;
+        color: #9E3E2B;
+    }
+}
